@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>7fb76d04-1ede-4f29-bbb3-98eeba8a1805</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/054ba0da-ada7-46f6-9573-68ddacf91582/resourceGroups/az30303a-labRG-lod19290822/providers/microsoft.insights/components/az304demo</ApplicationInsightsResourceId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.0.0" />
+    <PackageReference Include="Azure.Identity" Version="1.2.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\az304demo.Client.csproj" />
+    <ProjectReference Include="..\Shared\az304demo.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>
